@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            animation: changeColor 20s infinite alternate;
+        }
+
+        @keyframes changeColor {
+            0% { background-color: #000; color: #fff; }
+            25% { background-color: #333; color: #ff0; }
+            50% { background-color: #666; color: #0ff; }
+            75% { background-color: #999; color: #f0f; }
+            100% { background-color: #ccc; color: #00f; }
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            padding: 0 50px;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: inherit;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            grid-column: 1 / -1;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        <img src="WIN_20230126_17_19_24_Pro.jpg" alt="Your Name">
+        <h1>Ken Maina</h1>
+        <p>Full Stack Developer | Cloud Enthusiast | UI/UX Designer</p>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate and versatile full-stack developer with expertise in HTML, CSS, JavaScript, Dart, Java, and Python. My proficiency extends to various frameworks, including Flutter and React JS. I have hands-on experience with cloud platforms like AWS and Digital Ocean, and I am well-versed in using Firebase and Django for web development.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Languages: HTML, CSS, JavaScript, Dart, Java, Python</li>
+                <li>Frameworks: Flutter, React JS</li>
+                <li>Cloud Platforms: AWS, Firebase, Digital Ocean</li>
+                <li>Web Development: Django</li>
+                <li>Design Tools: Figma, Sketch</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>
+                <strong>[Schoolifi]</strong><br>
+                Description: [Brief description of the project, technologies used, and your role]<br>
+                GitHub: <a href="YourGitHubLink" target="_blank">GitHub repository link</a>
+            </p>
+            <p>
+                <strong>[School ifi]</strong><br>
+                Description: [Brief description of the project, technologies used, and your role]<br>
+                GitHub: <a href="YourGitHubLink" target="_blank">GitHub repository link</a>
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>
+                <strong>[School ifi/lead developer]</strong><br>
+                School ifi | Remote | 2022<br>
+                Responsibilities: [I lead the team in achieving the goal of digital School]
+            </p>
+            <p>
+                <strong>[School ifi/lead Software Engineer]</strong><br>
+                School ifi | Remote | 2022<br>
+                Responsibilities: [I was responsible in developing an interactive UI to the users and setting down the requirements]
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>
+                <strong>[Ibm data science]</strong><br>
+                IPTCC | 2022
+                <strong>[ RM&Information Technology]</strong><br>
+                KENYATTA UNIVESITY | ON SESSION
+            </p>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <h3>Connect with Me</h3>
+        <p>
+            <a href="YourGitHubLink" target="_blank">GitHub</a> |
+            <a href="https://twitter.com/MainaKenKen1" target="_blank">Twitter</a>
+ |
+            <a href="YourLinkedInLink" target="_blank">LinkedIn</a>
+        </p>
+        <h3>Contact</h3>
+        <p>
+            Email: <a href="mailto:YourEmail@example.com">Yourmainakenken188@gmail.com</a>
+        </p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
